@@ -3,26 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hanzi Trainer Prototype</title>
+    <title>Hanzi Trainer – Prototype</title>
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- React (nodig om je code te draaien) -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- React 18 UMD (globaal beschikbaar als window.React / window.ReactDOM) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel compileert JSX/TypeScript in de browser -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/babel">
-      // Plak hieronder de inhoud van jouw bestand:
-      // hanzi_trainer_react_single_file_prototype.jsx
-
-      // Let op: verwijder bovenaan regels zoals "import React from 'react'" of "import ReactDOM from 'react-dom'"
-      // want die halen we nu al binnen via de scripts hierboven.
-
-      // Als het goed is, eindigt jouw code met iets zoals:
-      // const root = ReactDOM.createRoot(document.getElementById('root'));
-      // root.render(<App />);
-    </script>
+    <!-- JOUW JSX/TSX file (nu zonder import/export) -->
+    <script type="text/babel" data-presets="typescript,react" src="hanzi_trainer_react_single_file_prototype.jsx"></script>
   </body>
 </html>
