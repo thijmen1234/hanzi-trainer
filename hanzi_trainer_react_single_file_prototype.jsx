@@ -351,7 +351,7 @@ function MultiCanvas({
 // =========================
 // Main Component
 // =========================
-export default function HanziTrainer() {
+function HanziTrainer() {
   const [cards, setCards] = useState<Card[]>([]);
   const [idx, setIdx] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
@@ -480,3 +480,6 @@ function Tests() {
   }, []);
   return null;
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<HanziTrainer />);
