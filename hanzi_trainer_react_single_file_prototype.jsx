@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+const { useEffect, useRef, useState } = React;
+
 
 // =========================
 // Hanzi Trainer – React Single‑file Prototype (fixed)
